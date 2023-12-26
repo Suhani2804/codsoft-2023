@@ -16,6 +16,10 @@ body
     height:8000px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     padding: 0;
     margin:0;
@@ -68,6 +72,7 @@ header nav .branding
 .hero .left img
 {
     width:400px; 
+    height:400px
 }
 
 .hero .right
@@ -259,6 +264,8 @@ section.services .card-wrapper .card p
     line-height:1.6;
 }
 
+
+
 section.freelancer
 {
     text-align:center;
@@ -353,6 +360,10 @@ section.reviews .dots li.slick-active button
     background: var(--primary);
     width: 20px;
 }
+
+/* section.reviews {
+    background:var(--ternary);
+} */
 
 section.contact .card-wrapper
 {
@@ -458,4 +469,40 @@ footer .copyright
 footer .footer-socials 
 {
     margin-bottom:2rem;
+}
+
+@media (max-width: 1024px){
+    header #main-nav{
+        display:none;
+    }
+}
+
+.site-main-wrapper{
+    position:relative;
+}
+
+.hamberger{
+    position:absolute;
+    top:40px;
+    right:40px;
+    z-index:11;
+    background:none;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+
+.hamberger i{
+    width:30px; 
+}
+
+.mobile-nav{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1001;
+    background:var(--light);
+    width:100%;
+    height:100%;
+    padding:2rem;
 }
