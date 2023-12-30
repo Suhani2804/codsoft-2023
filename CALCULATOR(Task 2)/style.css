@@ -1,28 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 html,body{
     height:100%;
     width:100%;
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452)
 }
 
 .button{
     padding:20px;
-    margin: 0 3px;
-    border:2px solid black;
-    border-radius:9px;
+    border:none;
+    margin: 10px;
+    border-radius:50%;
     cursor:pointer;
-    width:66px;
+    width:70px;
+    height:66px;
+    background:transparent;
+    color:#fff;
+    font-size:20px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1);
 }
 
 .row{
     margin: 8px 0;
 }
 
+.container{
+    border: 1px solid #717377;
+    width:70vh;
+    padding:20px;
+    border-radius:16x;
+    background:transparent;
+    box-shadow: 0px 3px 15px rgba(113,115,119,0.5);
+}
+
 .row input{
     width:291px;
-    margin:0;
-    padding:10px 0px;
-    border:2px solid black;
+    margin:10px;
+    padding:24px;
+    border:none;
     border-radius: 5px;
     font-size: 20px;
+    cursor:pointer;
+    outline:none;
+    box-shadow: 0px 3px 15px rgbs(84,84,84,0.2);
 }
+
+.equalBtn{
+    background: #fb7c14;
+}
+
+
